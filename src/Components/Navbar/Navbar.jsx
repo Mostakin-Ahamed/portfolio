@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div>
 
-            <div className="navbar bg-base-100 border border-red-500">
+            <div className="navbar bg-base-100 ">
                 <div className="navbar-start ">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -15,17 +15,17 @@ const Navbar = () => {
                             <Link to={'/home'}><li><a>Home </a></li></Link>
                             <Link to={'/aboutMe'}><li><a>About Me </a></li></Link>
                             <Link to={'/skills'}><li><a>Skills </a></li></Link>
-                            <Link to={'/contact'}><li><a>Contact Me</a></li></Link>
+                            <Link to={'/contactMe'}><li><a>Contact Me</a></li></Link>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Mostakin Ahamed</a>
+                    <Link to={'/home'}><a className="btn btn-ghost text-xl">Mostakin Ahamed</a></Link>
                 </div>
-                <div className="navbar-end hidden lg:mr-32 lg:flex border border-black">
-                    <ul className="menu menu-horizontal px-1">
+                <div className="navbar-end hidden lg:mr-32 lg:flex ">
+                    <ul className="menu menu-horizontal px-1 gap-4">
                         <Link to={'/home'}><li><a>Home </a></li></Link>
                         <Link to={'/aboutMe'}><li><a>About </a></li></Link>
                         <Link to={'/skills'}><li><a>Skills </a></li></Link>
-                        <Link to={'/contact'}><li><a>Contact Me</a></li></Link>
+                        <Link to={'/contactMe'}><li><a>Contact Me</a></li></Link>
                     </ul>
                 </div>
             </div>
